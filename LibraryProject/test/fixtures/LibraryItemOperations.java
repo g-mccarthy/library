@@ -17,7 +17,7 @@ public class LibraryItemOperations {
 	}
 	
 	public void WhenIAddABook(){
-		Book book = new Book(123);
+		Book book = new Book();
 		AddBookToLibrary addBook = new AddBookToLibrary(book);
 		addBook.execute();
 	}

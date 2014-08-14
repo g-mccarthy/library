@@ -6,6 +6,7 @@ import java.util.List;
 public class Library {
 
 	private static List<Book> books;
+	
 	public Library(){
 		if(null == books){
 			books = new ArrayList<Book>();
@@ -30,6 +31,10 @@ public class Library {
 	
 	public void clearBooks(){
 		books = null;
+	}
+	
+	public List<Book> getBooks(){
+		return books;
 	}
 
 }

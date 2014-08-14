@@ -26,7 +26,7 @@ public class ManipulateLibraryItems {
 	@Test
 	public void addingABookToTheLibrary_increasesNumberOfBooksByOne() {
 		int currentBookCount = l.getNumberOfBooks();
-		Book b = new Book(123);
+		Book b = new Book();
 		AddBookToLibrary abtl = new AddBookToLibrary(b);
 		abtl.execute();
 		assertEquals(++currentBookCount, l.getNumberOfBooks());
@@ -35,7 +35,7 @@ public class ManipulateLibraryItems {
 	@Test
 	public void removingABook_reducesTheNumberOfBooksByOne(){
 		int currentBookCount = l.getNumberOfBooks();
-		Book b = new Book(123);
+		Book b = new Book();
 //		Book b2 = new Book(124);
 		AddBookToLibrary abtl = new AddBookToLibrary(b);
 		abtl.execute();
