@@ -1,0 +1,11 @@
+#!|import |
+#|fixtures|
+
+Test the functionality of removing a book to the library
+
+!|script|Library item operations                |
+|check  |the number of books in the library is|0|
+|When I add a book                              |
+|check  |the number of books in the library is|1|
+|When I remove a book                           |
+|check  |the number of books in the library is|0|

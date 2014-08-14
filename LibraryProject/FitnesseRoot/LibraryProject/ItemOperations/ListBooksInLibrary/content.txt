@@ -1,0 +1,22 @@
+!|import |
+|fixtures|
+
+Test the functionality of removing a book to the library
+
+| Given books |
+| title | author |
+| A | author1 |
+| B | author2 |
+| C | author3 |
+
+#-!|script|
+#|given user U|
+#|with user U logged in|
+#|and with license for U able to view A|
+#|then the following codecasts will be presented for U|
+
+| Ordered query:of books |
+| title | author |
+| A | author1 |
+| B | author2 |
+| C | author3 |
